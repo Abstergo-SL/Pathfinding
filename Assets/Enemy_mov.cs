@@ -24,6 +24,7 @@ public class Enemy_mov : MonoBehaviour
     {
 
         ball = GetComponent<NavMeshAgent>();
+        ball.speed = 9.4F;
         square = GameObject.Find("cube");
         
 
@@ -36,6 +37,7 @@ public class Enemy_mov : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if (other.gameObject.name == "Cube")
         {
+            Debug.Log(GetComponent<NavMeshAgent>().speed);
             mcposition = GameObject.Find("Cube").transform.position;
             ball.SetDestination(mcposition);
         }
