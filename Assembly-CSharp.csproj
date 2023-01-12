@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Enemy_mov.cs" />
     <Compile Include="Assets\mov.cs" />
+    <Compile Include="Assets\set_trap.cs" />
+    <Compile Include="Assets\eliminate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

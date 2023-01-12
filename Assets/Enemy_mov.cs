@@ -16,6 +16,7 @@ public class Enemy_mov : MonoBehaviour
    
     int speed = 1;
     bool chiv = true;
+    float acc;
     Vector3 mcposition, enemyposition;
     
 
@@ -37,6 +38,7 @@ public class Enemy_mov : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if (other.gameObject.name == "Cube")
         {
+            
             Debug.Log(GetComponent<NavMeshAgent>().speed);
             mcposition = GameObject.Find("Cube").transform.position;
             ball.SetDestination(mcposition);
