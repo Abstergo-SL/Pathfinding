@@ -353,10 +353,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/eliminate.cs"
+"Assets/disparo.cs"
+"Assets/eliminar.cs"
 "Assets/Enemy_mov.cs"
 "Assets/mov.cs"
 "Assets/set_trap.cs"
+"Assets/Track_n_shoot.cs"
 -langversion:9.0
 
 /deterministic

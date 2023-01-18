@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 using UnityEngine.AI;
 using Unity.VisualScripting;
 using System;
-using UnityEditor.PackageManager;
+//using UnityEditor.PackageManager;
 
 public class Enemy_mov : MonoBehaviour 
 {

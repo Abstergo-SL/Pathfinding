@@ -17,6 +17,7 @@ public class mov : MonoBehaviour
     {
 
         box = GameObject.Find("Cube");
+        //box.GetComponent<Rigidbody>().AddForce(Physics.gravity, ForceMode.Acceleration);
 
     }
 
@@ -67,5 +68,12 @@ public class mov : MonoBehaviour
         {
             this.transform.Rotate(Vector3.up, 1);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            tempVect = new Vector3(0f, 10f * 10, 0f);
+            box.GetComponent<Rigidbody>().AddForce(tempVect);
+        }
+
     }
 }

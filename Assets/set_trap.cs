@@ -49,20 +49,20 @@ public class set_trap : MonoBehaviour
                 
                 if (square.GetComponent<BoxCollider>().bounds.Contains(hitInfo.point))
                 {
-                    
+
                     
                     
                     Debug.Log(cont);
                     //Debug.Log(hitInfo.point);
 
                     //trap.gameObject.AddComponent<eliminate>();
-                    ntraps[cont] = Instantiate(trap, hitInfo.point, transform.rotation);
-                    Destroy(ntraps[cont], 2);
+                    ntraps[cont] = Instantiate(trap, hitInfo.point, Quaternion.Euler(0, square.transform.eulerAngles.y+90, -10f));
+                    //Destroy(ntraps[cont], 2);
 
                     cont++;
 
                     if (cont == 10)
-                    {
+                    {  
                         Debug.Log(ntraps.LongLength);
                         DestroyImmediate(ntraps[0], true);
                         for (int i = 0; i < 9; i++)

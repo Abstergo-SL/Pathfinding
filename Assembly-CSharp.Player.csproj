@@ -56,10 +56,12 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\eliminar.cs" />
     <Compile Include="Assets\Enemy_mov.cs" />
     <Compile Include="Assets\mov.cs" />
+    <Compile Include="Assets\disparo.cs" />
+    <Compile Include="Assets\Track_n_shoot.cs" />
     <Compile Include="Assets\set_trap.cs" />
-    <Compile Include="Assets\eliminate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
